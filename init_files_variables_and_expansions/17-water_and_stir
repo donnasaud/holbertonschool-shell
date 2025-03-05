@@ -1,15 +1,3 @@
 #!/bin/bash
-# Convert WATER from base 'water' (01234) to decimal
-num1=$(echo "$WATER" | tr 'water' '01234')
-
-# Convert STIR from base 'stir' (01234) to decimal
-num2=$(echo "$STIR" | tr 'stir.' '01234')
-
-# Add the two decimal values
-sum=$((num1 + num2))
-
-# Convert the sum into base 'bestchol' (0123456789)
-result=$(echo "$sum" | tr '0123456789' 'bestchol')
-
-# Print the final result
-echo "$result"
+export WATER="ewwatratewa"
+export STIR="ti.itirtrtr"
